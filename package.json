@@ -18,8 +18,9 @@
     "sass"
   ],
   "scripts": {
-    "build": "npm run clean & webpack",
+    "build": "npm run clean && npm run copy-static && webpack",
     "clean": "rimraf _dist",
+    "copy-static": "cpx \"static/**/*.*\" _dist",
     "server": "node ./tasks/server.js",
     "test": "jest"
   },
@@ -32,6 +33,7 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
+    "cpx": "^1.5.0",
     "css-loader": "^2.1.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
