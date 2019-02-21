@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const url = require('url')
 
-const assetsPath = path.resolve(__dirname, '../dist')
+const assetsPath = path.resolve(__dirname, '../_dist')
 
 const knownExtensionsHeaders = {
   '.css': { 'Content-Type': 'text/css' },
@@ -12,7 +12,8 @@ const knownExtensionsHeaders = {
   '.png': { 'Content-Type': 'image/png' },
   '.svg': { 'Content-Type': 'image/svg+xml' },
   '.woff': { 'Content-Type': 'application/font-woff' },
-  '.woff2': { 'Content-Type': 'application/font-woff2' }
+  '.woff2': { 'Content-Type': 'application/font-woff2' },
+  '.map': { 'Content-Type': 'text/plain' }
 }
 
 // Handle Local Assets

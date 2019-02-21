@@ -1,0 +1,11 @@
+# Browsers that we support
+#
+# For references, check:
+# https://github.com/browserslist/browserslist
+# http://browserl.ist
+#
+# Used in Babel to load only the polyfills needed
+# Used in Autoprefixer to add only the targeted prefixes
+
+defaults
+ie 10
