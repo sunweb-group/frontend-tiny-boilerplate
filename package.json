@@ -20,7 +20,8 @@
   "scripts": {
     "build": "npm run clean & webpack",
     "clean": "rimraf _dist",
-    "server": "node ./tasks/server.js"
+    "server": "node ./tasks/server.js",
+    "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {
