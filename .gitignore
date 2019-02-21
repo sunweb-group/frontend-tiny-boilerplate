@@ -1,0 +1,28 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+# IDE settings & config
+.idea/
+.vscode/
+
+# Node Modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Sass/Scss Cache
+.sass-cache/
+
+# Other build related files
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
