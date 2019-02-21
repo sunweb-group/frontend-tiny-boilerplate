@@ -1,0 +1,33 @@
+$font-family__branding:                "Branding" !default;
+$font-family__branding--fallback:      Verdana, Geneva, sans-serif !default;
+$font-family__branding--path:          "#{$config__path-fonts}/branding" !default;
+
+@font-face {
+  font-family: $font-family__branding;
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Branding'), local('Branding Medium'), local('Branding-Medium'),
+  url('#{$font-family__branding--path}/branding--medium.woff2') format('woff2'),
+  url('#{$font-family__branding--path}/branding--medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family__branding;
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('Branding Semibold'), local('Branding-Semibold'),
+  url('#{$font-family__branding--path}/branding--semibold.woff2') format('woff2'),
+  url('#{$font-family__branding--path}/branding--semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-family__branding;
+  font-style: normal;
+  font-weight: 900;
+  font-display: fallback;
+  src: local('Branding Bold'), local('Branding-Bold'),
+  url('#{$font-family__branding--path}/branding--bold.woff2') format('woff2'),
+  url('#{$font-family__branding--path}/branding--bold.woff') format('woff');
+}

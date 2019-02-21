@@ -1,1 +1,23 @@
 
+/* -------------------------------------------------------------------------
+ * CONFIG
+ *
+ */
+
+$config__path-fonts:               "fonts" !default;
+
+
+/* -------------------------------------------------------------------------
+ * BASE
+ *
+ */
+
+// Font imports
+@import "fonts/branding";
+@import "fonts/sourcesans-pro";
+@import "fonts/verdana";
+
+
+.test {
+  font-family: $font-family__branding;
+}
